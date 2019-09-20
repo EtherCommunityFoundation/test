@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="../../css/core.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/foot.css">
+</head>
+
+<body>
+    <div class="guangyaoIndex">
+        <div class="headerFixed">
+            <div class="container">
+                <div class="header">
+                    <div class="logo" style="vertical-align: 10px;">
+                        <!-- <img id="logoImg" src="./src/static/img/enLogo.png" alt=""> -->
+                        <img id="" src="../../images/logo.png" alt="" style="width: 48px;">
+                    </div>
+                    <span style="font-size: 22px; position: relative; left: -14%;">Ether Community Foundation</span>
+
+                    <div class="header-right">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="../../index.html"><label class=" i18n" name="index">Home</label></a>
+                            </li>
+                            <li>
+                                <a href="./about.html"><label class="i18n" name="case">About</label></a>
+                            </li>
+                            <li>
+                                <a href="./ether_ecology.html"><label class="i18n" name="people">Ether ecology</label></a>
+                            </li>
+                            <li>
+                                <a href=""><label class="i18n" name="aboutUs">Ether community</label></a>
+                            </li>
+                            <li>
+                                <a href=""><label class="i18n" name="vip">Team</label></a>
+                            </li>
+                            <!-- 语言选择 -->
+
+                        </ul>
+                        <div class="lan lang">
+                            <div class="lan2">
+                                <select id="language" class="language">
+                                    <option href="#">English</option>
+                                    <option href="../ch_pages/ch_foot_1.html">中文</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container_foot_1">
+            <h1>Privacy Policy</h1>
+            <p>This Privacy Policy governs the manner in which you collect, use, disclose and process your personal data
+                when accessing or using our applications and services. In this policy, we, we or we refer to the
+                Ethereum Foundation.  
+            </p>
+            <p> We are committed to ensuring that your privacy is protected when you visit and visit our website. We
+                will not sell, rent or trade your personal data to third parties. We may disclose or share your personal
+                data with relevant organizations or business partners regarding the above provisions. We may also
+                disclose or share your personal data to third parties who provide us with the necessary services, such
+                as our service providers providing hosting and maintenance services, data analysis, messaging, marketing
+                and other professional services. We may disclose or share your personal data with relevant organizations
+                or business partners regarding the above provisions. We may also disclose or share your personal data
+                with third parties who provide us with the necessary services.
+            </p>
+            <p>You can submit a request to us to access, correct or delete your personal data. We may reject your
+                request if required or permitted by law. We may charge you for a response to your request, as permitted
+                by law.
+            </p>
+            <p> We may review or change the details of this Privacy Policy from time to time. Therefore, we do not need
+                to notify you of any changes or provide any notice.
+            </p>
+
+        </div>
+
+
+        <div class="footer">
+            <ur class="foot_mes">
+                <ul style="font-size: 22px">Terms and Conditions</ul>
+                <ul><a href="#">Privacy Policy</a></ul>
+                <ul><a href="./foot_2.html">Terms of use</a></ul>
+            </ur>
+            <div class="copyRight"><label class="i18n" name="copyRight">@2014 Ether Community Foundation All Rights
+                    Reserved</label>
+            </div>
+        </div>
+        <script src="../../js/jquery1.8.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/selectpick.js"></script>
+        <!-- 加载语言包文件 -->
+        <!-- <script src="./src/static/js/jquery.i18n.properties.js"></script> -->
+        <!-- <script src="../../js/language.js"></script> -->
+        <!-- <script src="../../js/common.js"></script> -->
+        <script>
+            $(function () {
+                var $body = $('body');
+                $body.on('change', 'select:has(option[href])', function (e) {
+                    var _this = $(this),
+                        _href = _this.find('option:selected').attr('href');//获取要跳转的地址
+                    location.href = _href; //跳转
+                })
+            })
+        </script>
+
+    </div>
+</body>
+
+</html>

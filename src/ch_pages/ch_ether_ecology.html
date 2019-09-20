@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>以太生态</title>
+    <link rel="stylesheet" href="../../css/core.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/foot.css">
+</head>
+
+<body>
+    <div class="guangyaoIndex">
+        <div class="headerFixed">
+            <div class="container">
+                <div class="header">
+                    <div class="logo" style="vertical-align: 10px;">
+                        <!-- <img id="logoImg" src="./src/static/img/enLogo.png" alt=""> -->
+                        <img id="" src="../../images/logo.png" alt="" style="width: 48px;">
+                    </div>
+                    <span style="font-size: 22px; position: relative; left: -21%;">以太社区基金会</span>
+
+                    <div class="header-right">
+                        <ul class="clearfix">
+                            <li><a href="./ch_index.html"><label class=" i18n" name="index">首页</label></a></li>
+                            <li><a href="./ch_about.html"><label class="i18n" name="case">关于我们</label></a></li>
+                            <li><a href="#"><label class="i18n" name="people">以太生态</label></a></li>
+                            <li><a href="./ch_ether_community.html"><label class="i18n" name="aboutUs">以太社区</label></a></li>
+                            <li><a href="./ch_team.html"><label class="i18n" name="vip">团队</label></a></li>
+                            <!-- 语言选择 -->
+
+                        </ul>
+                        <div class="lan lang">
+                            <div class="lan2">
+                                <select id="language" class="language">
+                                    <option href="#">中文</option>
+                                    <option href="../pages/ether_ecology.html">English</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ether_ecology">
+            <h1>以太生态</h1>
+            <h2>什么是以太生态？</h2>
+            <p>以太生态就是指一切生物的生存状态，以及它们之间和它与环境之间环环相扣的关系。对于区块链项目来说，以太生态就是在底层基础公链（环境）之上所运行的各种去中心化应用的生存状态以及他们之间与底层公链（环境）之间环环相扣的关系。公链（环境）的目的无疑是为了开发各种应用或者与区块链相关的应用，也就是通常所说的“落地”最终通过他们创造价值。
+            </p>
+            <div class="bg_img"><img src="../../images/bg_zh.png" alt="" style="width: 100%"></div>
+
+            <p>以太生态推进区块链3.0时代的到来,为时代奉献出智能、高效、规模化、多功能、多维度的区块链生态圈和应用场景方案。并且以太生态不仅仅为参与区块链的项目方、推广商、商家、会员、交易所等组织提供一站式综合性服务。除强大的区块链生态布局外,在未来将要引进了AI、大数据、IOT、VR等诸多被称为“新时代互联网颠覆技术”的技术手段,汇集其存在的技术优势,试图建立适应各个场景应用。以太生态也将在应用层面,将基于区块链技术打造出适应个人或机构工作、生活息息相关的应用模式,为其提供底层技术基础支持,以太生态也将通过多链并行、模块化以及智能合约等运行机制的支持,不断应对各种技术漏洞带来的应用场景不相匹配的问题,为未来各种应用场景搭建出属于其自身的应用圈。不断规避因技术乱象而导致的生态紊乱问题。
+            </p>
+        </div>
+
+
+
+
+        <div class="footer">
+            <ur class="foot_mes">
+                <ul style="font-size: 22px">条款和条件</ul>
+                <ul><a href="./ch_foot_1.html">隐私政策</a></ul>
+                <ul><a href="./ch_foot_2.html">使用条款</a></ul>
+            </ur>
+            <div class="copyRight"><label class="i18n" name="copyRight">@2014 Ether Community Foundation All Rights
+                    Reserved</label>
+            </div>
+        </div>
+        <script src="../../js/jquery1.8.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/selectpick.js"></script>
+        <!-- 加载语言包文件 -->
+        <!-- <script src="./src/static/js/jquery.i18n.properties.js"></script> -->
+        <!-- <script src="../../js/language.js"></script> -->
+        <!-- <script src="../../js/common.js"></script> -->
+        <script>
+            $(function() {
+                var $body = $('body');
+                $body.on('change', 'select:has(option[href])', function(e) {
+                    var _this = $(this),
+                        _href = _this.find('option:selected').attr('href'); //获取要跳转的地址
+                    location.href = _href; //跳转
+                })
+            })
+        </script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.container_foot_1{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container_foot_1 h1{
+    font-size: 4em;
+}
+
+.container_foot_1 p{
+    font-size: 22px;
+    margin-top: 80px;
+    color: #666;
+}
+
+.container_foot_2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container_foot_2 h1{
+    font-size: 2em;
+}
+
+.container_foot_2 p{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #666;
+}

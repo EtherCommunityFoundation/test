@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>以太生态</title>
+    <link rel="stylesheet" href="../../css/core.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/foot.css">
+</head>
+
+<body>
+    <div class="guangyaoIndex">
+        <div class="headerFixed">
+            <div class="container">
+                <div class="header">
+                    <div class="logo" style="vertical-align: 10px;">
+                        <!-- <img id="logoImg" src="./src/static/img/enLogo.png" alt=""> -->
+                        <img id="" src="../../images/logo.png" alt="" style="width: 48px;">
+                    </div>
+                    <span style="font-size: 22px; position: relative; left: -21%;">以太社区基金会</span>
+
+                    <div class="header-right">
+                        <ul class="clearfix">
+                            <li><a href="../../index.html"><label class=" i18n" name="index">首页</label></a></li>
+                            <li><a href="./about.html"><label class="i18n" name="case">关于我们</label></a></li>
+                            <li><a href="#"><label class="i18n" name="people">以太生态</label></a></li>
+                            <li><a href=""><label class="i18n" name="aboutUs">以太社区</label></a></li>
+                            <li><a href=""><label class="i18n" name="vip">团队</label></a></li>
+                            <!-- 语言选择 -->
+
+                        </ul>
+                        <div class="lan lang">
+                            <div class="lan2">
+                                <select id="language" class="language">
+                                    <option href="#">English</option>
+                                    <option href="../ch_pages/ch_ether_ecology.html">中文</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about_us">
+
+        </div>
+
+
+        <div class="footer">
+            <ur class="foot_mes">
+                <ul style="font-size: 22px">条款和条件</ul>
+                <ul><a href="./foot_1.html">隐私政策</a></ul>
+                <ul><a href="./foot_2.html">使用条款</a></ul>
+            </ur>
+            <div class="copyRight"><label class="i18n" name="copyRight">@2014 Ether Community Foundation All Rights
+                    Reserved</label>
+            </div>
+        </div>
+        <script src="../../js/jquery1.8.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/selectpick.js"></script>
+        <!-- 加载语言包文件 -->
+        <!-- <script src="./src/static/js/jquery.i18n.properties.js"></script> -->
+        <!-- <script src="../../js/language.js"></script> -->
+        <!-- <script src="../../js/common.js"></script> -->
+        <script>
+            $(function () {
+                var $body = $('body');
+                $body.on('change', 'select:has(option[href])', function (e) {
+                    var _this = $(this),
+                        _href = _this.find('option:selected').attr('href');//获取要跳转的地址
+                    location.href = _href; //跳转
+                })
+            })
+        </script>
+
+    </div>
+</body>
+
+</html>

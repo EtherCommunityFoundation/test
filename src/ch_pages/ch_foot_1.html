@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>隐私政策</title>
+    <link rel="stylesheet" href="../../css/core.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/foot.css">
+</head>
+
+<body>
+    <div class="guangyaoIndex">
+        <div class="headerFixed">
+            <div class="container">
+                <div class="header">
+                    <div class="logo" style="vertical-align: 10px;">
+                        <!-- <img id="logoImg" src="./src/static/img/enLogo.png" alt=""> -->
+                        <img id="" src="../../images/logo.png" alt="" style="width: 48px;">
+                    </div>
+                    <span style="font-size: 22px; position: relative; left: -21%;">以太社区基金会</span>
+
+                    <div class="header-right">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="./ch_index.html"><label class=" i18n" name="index">首页</label></a>
+                            </li>
+                            <li>
+                                <a href="./ch_about.html"><label class="i18n" name="case">关于我们</label></a>
+                            </li>
+                            <li>
+                                <a href="./ch_ether_ecology.html"><label class="i18n" name="people">以太生态</label></a>
+                            </li>
+                            <li>
+                                <a href="./ch_ether_community.html"><label class="i18n" name="aboutUs">以太社区</label></a>
+                            </li>
+                            <li>
+                                <a href="./ch_team.html"><label class="i18n" name="vip">团队</label></a>
+                            </li>
+                            <!-- 语言选择 -->
+
+                        </ul>
+                        <div class="lan lang">
+                            <div class="lan2">
+                                <select id="language" class="language">
+                                    <option href="#">中文</option>
+                                    <option href="../pages/foot_1.html">English</option>
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container_foot_1">
+            <h1>隐私政策</h1>
+            <p>本隐私政策规定了您在访问或使用我们的应用程序和服务时收集，使用，披露和处理您的个人数据的方式。在本政策中，我们，我们或我们指的是以太社区基金会。
+            </p>
+            <p> 我们致力于确保您访问和访问我们的网站时保护您的隐私。我们不会将您的个人数据出售，出租或交易给第三方。我们可能会就上述规定与相关组织或业务合作伙伴披露或分享您的个人数据。我们还可能向向我们提供必要服务的第三方披露或分享您的个人数据，例如我们的服务提供商提供托管和维护服务，数据分析，消息传递，营销和其他专业服务等服务。我们可能会就上述规定与相关组织或业务合作伙伴披露或分享您的个人数据。我们还可能向向我们提供必要服务的第三方披露或分享您的个人数据。
+            </p>
+            <p>您可以向我们提交访问，更正或删除您的个人数据的请求。如果法律要求或允许，我们可能会拒绝您的请求。在法律允许的情况下，我们可能会向您收取回应您的请求的费用。</p>
+            <p> 我们可能会不时审查或更改本隐私政策中的详细信息。因此，我们无需通知您任何变更或提供任何通知。</p>
+
+        </div>
+
+
+        <div class="footer">
+            <ur class="foot_mes">
+                <ul style="font-size: 22px">条款和条件</ul>
+                <ul><a href="#">隐私政策</a></ul>
+                <ul><a href="./ch_foot_2.html">使用条款</a></ul>
+            </ur>
+            <div class="copyRight"><label class="i18n" name="copyRight">@2014 Ether Community Foundation All Rights
+                    Reserved</label>
+            </div>
+        </div>
+        <script src="../../js/jquery1.8.js"></script>
+        <script src="../../js/swiper.min.js"></script>
+        <script src="../../js/selectpick.js"></script>
+        <!-- 加载语言包文件 -->
+        <!-- <script src="./src/static/js/jquery.i18n.properties.js"></script> -->
+        <!-- <script src="../../js/language.js"></script> -->
+        <!-- <script src="../../js/common.js"></script> -->
+        <script>
+            $(function() {
+                var $body = $('body');
+                $body.on('change', 'select:has(option[href])', function(e) {
+                    var _this = $(this),
+                        _href = _this.find('option:selected').attr('href'); //获取要跳转的地址
+                    location.href = _href; //跳转
+                })
+            })
+        </script>
+
+    </div>
+</body>
+
+</html>
